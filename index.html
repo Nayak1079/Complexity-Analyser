@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big O Notation Calculator</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-okaidia.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Big O Notation Analyzer</h1>
+        <p>Analyze the time complexity of your code instantly!</p>
+
+        <!-- Language Selector -->
+        <div class="input-group">
+            <label for="languageOption">Select Language:</label>
+            <select id="languageOption">
+                <option value="javascript">JavaScript</option>
+                <option value="java">Java</option>
+                <option value="c">C</option>
+                <option value="cpp">C++</option>
+                <option value="python">Python</option>
+                <option value="csharp">C#</option>
+                <option value="swift">Swift</option>
+            </select>
+        </div>
+
+        <!-- Code Input with Highlighting -->
+        <div class="editor">
+            <textarea id="codeInput" spellcheck="false" placeholder="Write your code here..."></textarea>
+            <pre id="highlightedCode"><code class="language-javascript"></code></pre>
+        </div>
+        
+        <!-- Button -->
+        <button id="getBigOBtn">Analyze Complexity</button>
+
+        <!-- Result Display -->
+        <div class="result-box">
+            <h2>Complexity Result:</h2>
+            <pre id="resultShow"></pre>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
+
